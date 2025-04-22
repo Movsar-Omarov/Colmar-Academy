@@ -1,0 +1,518 @@
+/* General Style */
+
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Navigator Style */
+
+header, .nav-mobile, .nav-mobile nav, .nav-mobile ul {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+
+    background-color: white;
+
+    min-height: 4rem;
+    padding: 1% 1.5rem;
+}
+
+.nav-desktop {
+    display: none;
+}
+
+.nav-mobile ul  {
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 1000px) {
+    .nav-mobile {
+        display: none;
+    }
+
+    /* Display and Box set up */
+
+    .nav-desktop, .nav-desktop ul {
+        width: 100%;
+    }
+
+    .nav-desktop, .nav-desktop ul, .logo-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-container, .nav-desktop nav {
+        width: 25%;
+    }
+
+    /* Logo Style */
+
+    .logo-container {
+        justify-content: flex-start;
+    }
+
+    .logo-container h3 {
+        font-weight: normal;
+        font-size: 2rem;
+        color: #B8B8B8;
+    }
+
+    .logo-container strong {
+        color: #4A4A4A;
+    }
+
+    /* Menu Links Style */
+
+    .nav-desktop ul {
+        justify-content: flex-end;
+    }
+
+    .nav-link {
+        margin-right: 1rem;
+    }
+
+    .nav-link a {
+        text-decoration: none;
+        color: #6A6A6A;
+    }
+}
+
+main {
+    margin-top: 4rem;
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        margin-top: 4.5rem;
+    }
+}
+
+/* Introduction Style */
+
+.introduction {
+    background-color: #DBDBDB;
+}
+
+.introduction .image-blog {
+    min-height: 20rem;
+    
+    background-image: url("./assets/images/banner.jpg");
+    background-position: center top;
+    background-size: cover;
+}
+
+/* Start Content */
+
+.start {
+    padding: 2rem 1rem;
+    line-height: 1.3;
+    color: #4A4A4A;
+}
+
+
+
+.start h1 {
+    font-size: 2.5rem;
+
+    margin-bottom: 2rem;
+}
+
+.start h4 {
+    margin-bottom: 1.5rem;
+}
+
+.start-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+
+    background-color: #9B9B9B;
+
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .introduction {
+        display: flex;
+
+        padding: 2rem 1.5rem;
+    }
+
+    .introduction .image-blog {
+        width: 50%;
+        margin-right: 1.5rem;
+    }
+
+    .introduction .start {
+        width: 40%;
+    }
+
+    .start-button {
+        width: 100%;
+        margin: 0;
+
+        font-weight: normal;
+
+        background-color: #4A4A4A;
+    }
+}
+
+/* Campus Style */
+
+.campus {
+    padding: 1rem 1rem 2rem;
+}
+
+.blog {
+    display: none;
+}
+
+.image-campus {
+    min-height: 14rem;
+
+    background-position: left center;
+    background-size: cover;
+}
+
+.orientation-date {
+    background-image: url("./assets/images/information-orientation-mobile.jpg");
+}
+
+.our-campus {
+    background-image: url("./assets/images/information-campus-mobile.jpg");
+}
+
+.our-guest-lecture {
+    background-image: url("./assets/images/information-guest-lecture-mobile.jpg");
+}
+
+.campus-content {
+    padding: 1rem 1rem 0;
+
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #4A4A4A;
+}
+
+.campus-content h3 {
+    font-size: 1.5rem;
+}
+
+.campus-content a {
+    text-decoration: none;
+    color: #6CA4E5;
+
+    display: inline-block;
+
+    margin-top: 0.5rem;
+}
+
+.distance {
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .campus {
+        display: flex;
+    }
+    
+    .blog {
+        display: inline-block;
+
+        width: 60%;
+        margin-right: 1.5rem;
+    }
+
+    .blog h2 {
+        color: #4A4A4A;
+
+        margin-bottom: 1.5rem;
+    }
+
+    .blog p {
+        color: #6A6A6A;
+        line-height: 1.5;
+    }
+
+    .image-blog {
+        min-height: 20rem;
+        margin-bottom: 2rem;
+        
+        background-image: url("./assets/images/information-main.jpg");
+        background-size: cover;
+        background-position: right bottom;
+    }
+
+    .campus-info {
+        width: 40%;
+    }
+
+    .campus-info li {
+        display: flex;
+    }
+
+    .image-campus {
+        width: 35%;
+        min-height: auto;
+    }
+
+    .campus-content {
+        width: 65%;
+    }
+
+    .orientation-date {
+        background-image: url("./assets/images/information-orientation.jpg");
+    }
+
+    .our-campus {
+        background-image: url("./assets/images/information-campus.jpg");
+    }
+
+    .our-guest-lecture {
+        background-image: url("./assets/images/information-guest-lecture.jpg");
+    }
+}
+
+/* Courses Style */
+
+.online-courses {
+    padding: 2rem 1rem;
+
+    color: #4a4a4a;
+}
+
+.online-courses h2 {
+    margin-bottom: 1rem;
+
+    text-align: center;
+}
+
+.online-courses li {
+    padding: 1rem;
+
+    background-color: #DBDBDB;
+
+    margin-bottom: 0.5rem;
+}
+
+.online-courses h4, .online-courses p {
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .online-courses {
+        background-color: #EAEBEC;
+
+        padding: 2rem 4.5rem;
+    }
+
+    .online-courses ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .online-courses li {
+        width: 30%;
+        margin-bottom: 2rem;
+        padding: 0;
+
+        background-color: white;
+    }
+
+    .middle {
+        margin: 0 2rem;
+    }
+
+    .course-content {
+        padding: 1rem 1rem 1.5rem;
+    }
+
+    .online-courses h4, .online-courses p {
+        display: block;
+
+        color: #8B8B8B;
+        font-weight: normal;
+        line-height: 1.5;
+    }
+    
+    .online-courses h3, .online-courses h4 {
+        margin-bottom: 0.5rem;
+    }
+
+    .image-course {
+        min-height: 8rem;
+        
+        background-size: cover;
+    }
+
+    .software-engineering {
+        background-image: url("./assets/images/course-software.jpg");
+    }
+
+    .computer-art {
+        background-image: url("./assets/images/course-computer-art.jpg");
+    }
+
+    .design {
+        background-image: url("./assets/images/course-design.jpg");
+    }
+
+    .data {
+        background-image: url("./assets/images/course-data.jpg");
+    }
+
+    .business {
+        background-image: url("./assets/images/course-business.jpg");
+    }
+
+    .marketing {
+        background-image: url("./assets/images/course-marketing.jpg");
+    }
+}
+
+/* Exhibit Style */
+
+.exhibit {
+    padding: 2rem 0 1.5rem;
+}
+
+.exhibit aside, .exhibit p, .exhibit h3 {
+    display: none;
+}
+
+.exhibit h2 {
+    text-align: center;
+    color: #4A4A4A;
+
+    margin-bottom: 1rem;
+}
+
+video {
+    width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+    .exhibit {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .exhibit h2 {
+        width: 100%;
+    }
+
+    video, .exhibit article {
+        width: 60%;
+    }
+
+    video {
+        margin-bottom: 1.5rem;
+    }
+
+    .exhibit h3 {
+        display: block;
+
+        margin-bottom: 0.5rem;
+
+        color: #4A4A4A;
+    }
+
+    .exhibit aside {
+        display: inline-block;
+        
+        width: 40%;
+    }
+
+    .exhibit aside li {
+        display: flex;
+
+        padding: 1rem;
+    }
+
+    .first {
+        background-color: #DBDBDB;
+    }
+
+    .exhibit-content {
+        width: 65%;
+
+        line-height: 1.5;
+    }
+
+    .exhibit-content h4 {
+        color: #4A4A4A;
+    }
+
+    .exhibit p {
+        display: block;
+
+        color: #777777;
+        line-height: 1.5;
+    }
+
+    .image-exhibit {
+        min-height: 5rem;
+        width: 35%;
+        margin-right: 1rem;
+
+        background-size: cover;
+        background-position: center;
+    }
+
+    .fisma {
+        background-image: url("./assets/images/thesis-fisma.jpg");
+    }
+
+    .now-and-then {
+        background-image: url("./assets/images/thesis-now-and-then.jpg");
+    }
+}
+
+/* Footer Style */
+
+footer {
+    padding: 1rem;
+
+    color: #9B9B9B;
+}
+
+footer ul {
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    footer ul {
+        display: inline-flex;
+        justify-content: space-between;
+
+        width: 13%;
+    }
+
+    footer a {
+        color: #9B9B9B;
+        text-decoration: none;
+    }
+}
